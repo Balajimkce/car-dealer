@@ -3,91 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Balaji's Car Dealership</title>
+  <title>Available Cars - Balaji's Dealership</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    * {
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
-      font-family: 'Poppins', sans-serif;
-      box-sizing: border-box;
-    }
-
-    body {
-      background-color: #f4f4f4;
       color: #333;
     }
 
     header {
       background: #0d1b2a;
-      color: #fff;
+      color: white;
       padding: 2rem;
       text-align: center;
     }
 
-    header h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    .hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-    }
-
-    .hero img {
-      width: 90%;
-      max-width: 900px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 2rem;
-    }
-
-    .buttons a button {
-      background: #0077b6;
-      color: white;
-      border: none;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: background 0.3s;
-      text-decoration: none;
-    }
-
-    .buttons a button:hover {
-      background: #023e8a;
-    }
-
-    .contact {
-      background-color: #fff;
+    .car-listing {
+      max-width: 1000px;
       margin: 2rem auto;
-      padding: 2rem;
-      max-width: 600px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 1rem;
     }
 
-    .contact h2 {
-      margin-bottom: 1rem;
+    .car {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .car h3 {
+      margin-bottom: 0.5rem;
       color: #0d1b2a;
     }
 
-    .contact p {
-      margin: 0.3rem 0;
-      line-height: 1.6;
+    .car p {
+      margin: 0.2rem 0;
     }
 
     footer {
@@ -102,36 +56,39 @@
 <body>
 
   <header>
-    <h1>Balaji's Car Dealership</h1>
-    <p>Your trusted partner for premium cars</p>
+    <h1>Available Cars</h1>
+    <p>Explore our premium collection</p>
   </header>
 
-  <div class="hero">
-    <img src="image.jpg" alt="Car Dealership Hero Image">
-  </div>
-
-  <div class="buttons">
-    <a href="cars"><button>View Cars</button></a>
-    <a href="contact.html"><button>Contact Us</button></a>
-    <a href="contact.html#form"><button>Book a Test Drive</button></a>
-  </div>
-  <div id="cars" class="contact">
-  <h2>Available Cars</h2>
-  <ul>
-    <li><strong>Tesla Model S</strong> – Electric, 396 miles range, ₹85,00,000</li>
-    <li><strong>BMW X5</strong> – Luxury SUV, 3.0L Turbo, ₹95,00,000</li>
-    <li><strong>Audi A6</strong> – Premium Sedan, 2.0L TFSI, ₹70,00,000</li>
-    <li><strong>Mercedes-Benz GLC</strong> – 4MATIC SUV, ₹78,00,000</li>
-    <li><strong>Hyundai Ioniq 5</strong> – EV Crossover, ₹50,00,000</li>
-  </ul>
-</div>
-
-  <div class="contact">
-    <h2>Contact Details</h2>
-    <p><strong>Name:</strong> Balaji</p>
-    <p><strong>Phone:</strong> +91 7708566228</p>
-    <p><strong>Email:</strong> balajid6820@gmail.com</p>
-    <p><strong>Address:</strong> 16/3, Dubai Kurukku Santhu, Dubai, UAE 4007</p>
+  <div class="car-listing">
+    <div class="car">
+      <h3>Tesla Model S</h3>
+      <p><strong>Type:</strong> Electric</p>
+      <p><strong>Range:</strong> 396 miles</p>
+      <p><strong>Price:</strong> ₹85,00,000</p>
+    </div>
+    <div class="car">
+      <h3>BMW X5</h3>
+      <p><strong>Type:</strong> Luxury SUV</p>
+      <p><strong>Engine:</strong> 3.0L Turbo</p>
+      <p><strong>Price:</strong> ₹95,00,000</p>
+    </div>
+    <div class="car">
+      <h3>Audi A6</h3>
+      <p><strong>Type:</strong> Premium Sedan</p>
+      <p><strong>Engine:</strong> 2.0L TFSI</p>
+      <p><strong>Price:</strong> ₹70,00,000</p>
+    </div>
+    <div class="car">
+      <h3>Mercedes-Benz GLC</h3>
+      <p><strong>Type:</strong> 4MATIC SUV</p>
+      <p><strong>Price:</strong> ₹78,00,000</p>
+    </div>
+    <div class="car">
+      <h3>Hyundai Ioniq 5</h3>
+      <p><strong>Type:</strong> EV Crossover</p>
+      <p><strong>Price:</strong> ₹50,00,000</p>
+    </div>
   </div>
 
   <footer>
